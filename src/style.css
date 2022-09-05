@@ -1,0 +1,134 @@
+/* CSS Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+button {
+    border: none;
+}
+
+body {
+    background-color: rgb(40, 44, 52);
+}
+
+.main-container {
+    width: 80%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.movie-card {
+    max-width: 12em;
+    overflow: hidden;
+    position: relative;
+}
+
+img.movie-thumbnail {
+    border-radius: 5px;
+}
+
+.info>.title {
+    width: 164px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.info {
+    visibility: hidden;
+    background-color: rgb(40, 44, 52, 0.8);
+    color: lightblue;
+    position: absolute;
+    top: 50%;
+    padding: 0.5em;
+    min-height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding-top: 0.7em;
+}
+
+.movie-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+div.movie-card:hover .info {
+    visibility: visible;
+}
+
+.details-container {
+    background-color: bisque;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+}
+
+.details > img {
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 600px;
+}
+
+.left p {
+    font-size: 13px;
+}
+
+.chip {
+    background-color: #f1f1f1;
+    color: rgb(40, 44, 52);
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+button {
+    width: fit-content;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 15px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+button img {
+    width: 20px;
+}
